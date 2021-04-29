@@ -1,0 +1,27 @@
+body {
+    background-color: bisque;
+}
+
+h3, p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 33rem;
+}
+
+table {
+    border: 2px solid white;
+    border-radius: 3px;
+    text-align: center;
+    margin: 2rem 33rem;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin: 0 auto;
+}

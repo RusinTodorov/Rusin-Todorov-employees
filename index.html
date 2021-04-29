@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favIcon.ico">
+    <title>Team Longest Period</title>
+</head>
+
+<body>
+    <main>
+        <h3>Input Form:</h3>
+        <form id="inputForm">
+            <label for="inputTxtFile">Upload a text file, please!</label>
+            <input id="inputTxtFile" type="file" accept=".txt" required>
+            <label for="formats">Choose date format:</label>
+            <select name="dateFormats" id="formats" required>
+                <option value="YYYY-MM-DD">ISO Date: YYYY-MM-DD</option>
+                <option value="MM/DD/YYYY">Short Date: MM/DD/YYYY</option>
+                <option value="DD MMM YYYY">Long Date: MMM DD YYYY or DD MMM YYYY</option>
+            </select>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <p id="message"></p>
+        <h3>Results:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Days worked</th>
+                    <th>Employee ID #1</th>
+                    <th>Employee ID #2</th>
+                    <th>Project ID</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+            </tbody>
+        </table>
+    </main>
+    <script src="Utils/checkInputForBadFormating.js"></script>
+    <script src="Utils/convertFromNullToDate.js"></script>
+    <script src="Utils/correctingNulls.js"></script>
+    <script src="Utils/findCouples.js"></script>
+    <script src="Utils/view.js"></script>
+    <script src="Utils/calculateMilliseconds.js"></script>
+    <script src="Utils/reduceData.js"></script>
+    <script src="Utils/finalResults.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
