@@ -56,9 +56,9 @@ function findAndCombinedDuplicats(data) {
             NEW_ARRAY.push(FIRST_ARRAY[PROJECT_ID_INDEX]);
             NEW_ARRAY[PROJECT_ID_INDEX] += ', ' + SECOND_ARRAY[PROJECT_ID_INDEX];
 
-            data.unshift(NEW_ARRAY);
-            data = data.filter(arr => arr[0] !== 0);
+            data.push(NEW_ARRAY);
         });
+        data = data.filter(arr => arr[0] !== 0);
 
         return findAndCombinedDuplicats(data);
     }
